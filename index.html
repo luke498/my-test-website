@@ -22,6 +22,14 @@
         r.appendChild(e);
     })(window, document, 'https://static.hj.contentsquare.net/c/csq-', '.js', 5320401);
 </script>
+$('div').on('mouseenter', function() {
+    $(this).addClass('hover-effect');  // เพิ่ม class ตอนเมาส์ชี้
+}).on('mouseleave', function() {
+    $(this).removeClass('hover-effect'); // ลบ class ตอนเมาส์ออก
+});
+.hover-effect {
+    background: red; /* หรือสีที่ต้องการ */
+}
 <link rel="icon" href="your-icon-path.ico">
   <meta id="vp" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <meta name='robots' content='index, follow, max-image-preview:large' />
